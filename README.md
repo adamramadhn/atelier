@@ -36,6 +36,8 @@ Yang sengaja TIDAK diambil:
 
 ## Pemakaian
 
-Tipikal agent-standard (`skills/<nama>/SKILL.md` + folder pendukung). Salin folder skill yang dibutuhkan ke direktori skills harness masing-masing (`.claude/skills/`, `.agents/skills/`, dll.)
+Format agent-standard (`skills/<nama>/SKILL.md` + folder pendukung). Salin folder skill yang dibutuhkan ke direktori skills harness masing-masing (`.claude/skills/`, `.agents/skills/`, dll.)
+
+**Routing dipakai jangan diganti-ganti**: [AGENTS.md](AGENTS.md) adalah sumber kebenaran soal skill mana untuk permintaan mana — aturan routing, guard anti-overlap, dan catatan environment (Node 22+/Chromium untuk taste scripts, engine binary impeccable, sebagainya) ada di sana. [CLAUDE.md](CLAUDE.md) menambahkan konvensi khusus Claude Code dan menunjuk ke AGENTS.md. `skills/frontend-design/LICENSE.txt` harus ikut kalau folder skill-nya disalin.
 
 Kebijakan update: manual-review-only — tidak ada auto-update dari upstream; tiap skill punya commit provenance di atas. Saat upgrade, diff folder skill lama vs upstream dan review perubahan sebelum dipakai.
