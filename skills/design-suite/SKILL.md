@@ -1,6 +1,8 @@
 ---
 name: design-suite
 description: "One entry point for all UI and copy work. Five internally-vendored modules, routed by task: (1) ui-ux-pro-max — searchable design conventions (79 styles, 192 palettes, 74 font pairings, 119 UX guidelines, 22 stacks); (2) design-taste-frontend (taste-skill v2) — greenfield art direction and building landing pages, marketing sites, portfolios, one-pagers and app screens, anti-slop house style with real-browser inspection and screenshot loops; (3) impeccable — refine, critique, audit, polish, harden, or otherwise improve an EXISTING UI, including native (iOS/Android) surfaces. (4) frontend-design — inexpensive principles for distinctive, intentional design on any fresh UI. (5) no-ai-slop — edit or detect AI-slop patterns in any copy or documentation. Use this skill for anything design, UI, UX, copy editing, or the accusation that something looks generic / AI-made."
+user-invocable: true
+argument-hint: "[lookup|taste|impeccable|principles|slop] <module-args> [target]"
 ---
 
 # design-suite
