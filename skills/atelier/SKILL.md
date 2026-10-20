@@ -33,6 +33,14 @@ Anti-overlap guard: never run two before/after-equivalent modules on the same ar
 
 The user's pinned brief always wins over module defaults — including the brief that asks for one of the "tells" a module catalogs.
 
+### Reference-URL intake (user supplies a style reference)
+
+When the user seeds the task with a URL (or screenshots) whose look they want imitated, capture the reference before dealing any direction:
+
+1. **Extract, don't eyeball.** Measure the reference page with the taste module's inspector: `node references/design-taste-frontend/scripts/inspect.mjs <url> --out .taste-skill/reference` — it saves real screenshots (desktop/tablet/mobile) and prints measured colors, fonts actually loaded, type sizes, radii, shadows, gradients. Working offline or without Chrome: screenshot via any browser tool and read computed styles by hand.
+2. **Store as a pinned brief** — write the tokens (palette hex, type stack + weights, spacing/rhythm, radius, shadow, motion character, layout signature, and what the page does NOT do) into `REFERENCE.md` in the project root. A copy is not a target: name the style's grammar and the feel, not pixel values to clone. **This does not license cloning someone else's work: replicate the system (spacing, hierarchy, tone), keep the content original, and don't copy trademarked imagery or custom artwork.**
+3. **Route exactly as before.** Greenfield landing work → taste run, with `REFERENCE.md` as the pinned brief; if the reference fixes brand colors/type, pass taste's deal `--keep palette,type` (or a named `--direction`) and skip brand re-dealing. Existing-UI polish → impeccable, with `DESIGN.md` seeded from `REFERENCE.md`. Lookup helpers (`ui-ux-pro-max`) carry the same tokens through either pipeline.
+
 ## Environment
 
 - `design-taste-frontend` scripts: Node 22+, Chrome/Edge/Chromium; run from the project root so working files land in `.taste-skill/` there. `assets.mjs` needs network; nothing else does.
