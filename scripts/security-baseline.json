@@ -3,7 +3,443 @@
     "score": 100,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
-    "findings": [],
+    "findings": [
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "TM1/Tool Misuse",
+        "severity": "HIGH",
+        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "TM1/Tool Misuse",
+        "severity": "HIGH",
+        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+      },
+      {
+        "rule": "TM1/Tool Misuse",
+        "severity": "HIGH",
+        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+      },
+      {
+        "rule": "AS3/Agent Snooping",
+        "severity": "MEDIUM",
+        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+      },
+      {
+        "rule": "LP3/MCP Least Privilege",
+        "severity": "MEDIUM",
+        "title": "Without declared permissions the skill's intent is opaque and cannot be validated."
+      },
+      {
+        "rule": "EA4/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill allows unbounded resource consumption (API calls, storage, compute). Without rate limits or quotas, a compromised "
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      }
+    ],
     "coverage": 71.1,
     "waived": [
       {
@@ -76,7 +512,13 @@
     "score": 13,
     "severity": "LOW",
     "recommendation": "SAFE",
-    "findings": [],
+    "findings": [
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      }
+    ],
     "coverage": 100.0,
     "waived": []
   },
@@ -84,7 +526,233 @@
     "score": 100,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
-    "findings": [],
+    "findings": [
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      },
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      },
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      },
+      {
+        "rule": "AS1/Agent Snooping",
+        "severity": "HIGH",
+        "title": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, "
+      },
+      {
+        "rule": "AS1/Agent Snooping",
+        "severity": "HIGH",
+        "title": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, "
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      },
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      },
+      {
+        "rule": "LP3/MCP Least Privilege",
+        "severity": "MEDIUM",
+        "title": "Without declared permissions the skill's intent is opaque and cannot be validated."
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "RA2/Rogue Agent",
+        "severity": "MEDIUM",
+        "title": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persi"
+      },
+      {
+        "rule": "AS3/Agent Snooping",
+        "severity": "MEDIUM",
+        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+      },
+      {
+        "rule": "RA2/Rogue Agent",
+        "severity": "MEDIUM",
+        "title": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persi"
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "AS3/Agent Snooping",
+        "severity": "MEDIUM",
+        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+      },
+      {
+        "rule": "MP1/Memory Poisoning",
+        "severity": "MEDIUM",
+        "title": "Skill injects content designed to persist in agent memory or context across interactions. Persistent injection can alter"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      }
+    ],
     "coverage": 94.7,
     "waived": [
       {
@@ -125,7 +793,338 @@
     "score": 100,
     "severity": "CRITICAL",
     "recommendation": "DO_NOT_INSTALL",
-    "findings": [],
+    "findings": [
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "OH1/Output Handling",
+        "severity": "HIGH",
+        "title": "Model output is used without validation or sanitization. Unvalidated output injected into downstream contexts (SQL, shel"
+      },
+      {
+        "rule": "OH1/Output Handling",
+        "severity": "HIGH",
+        "title": "Model output is used without validation or sanitization. Unvalidated output injected into downstream contexts (SQL, shel"
+      },
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "PE3/Privilege Escalation",
+        "severity": "HIGH",
+        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+      },
+      {
+        "rule": "P1/Prompt Injection",
+        "severity": "HIGH",
+        "title": "This pattern attempts to override system instructions or ignore safety constraints. Without LLM analysis, manual review "
+      },
+      {
+        "rule": "P6/System Prompt Leakage",
+        "severity": "HIGH",
+        "title": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users o"
+      },
+      {
+        "rule": "P6/System Prompt Leakage",
+        "severity": "HIGH",
+        "title": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users o"
+      },
+      {
+        "rule": "E2/Data Exfiltration",
+        "severity": "HIGH",
+        "title": "Code enumerates, copies, or searches environment variables for secrets. Bulk environment access can collect credentials "
+      },
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      },
+      {
+        "rule": "LP3/MCP Least Privilege",
+        "severity": "MEDIUM",
+        "title": "Without declared permissions the skill's intent is opaque and cannot be validated."
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "E1/Data Exfiltration",
+        "severity": "MEDIUM",
+        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+      },
+      {
+        "rule": "TM3/Tool Misuse",
+        "severity": "MEDIUM",
+        "title": "Tool defaults are unsafe or overly permissive (e.g. disabled TLS verification, no authentication, world-writable permiss"
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AS3/Agent Snooping",
+        "severity": "MEDIUM",
+        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+      },
+      {
+        "rule": "PE1/Privilege Escalation",
+        "severity": "LOW",
+        "title": "Skill requests more permissions than appear necessary for its stated functionality. Review if elevated access is justifi"
+      }
+    ],
     "coverage": 93.2,
     "waived": [
       {

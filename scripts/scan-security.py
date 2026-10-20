@@ -65,13 +65,27 @@ def scan_static(dir_: Path):
                     and a["analyzer_id"] not in waived_analyzers]
         if not degraded:
             ra = d.get("risk_assessment", {})
+            src = d.get("issues")
+            if isinstance(src, list):
+                pass
+            elif isinstance(d.get("findings_after_filtering"), list):
+                src = d.get("findings_after_filtering")
+            else:
+                src = []
             findings = []
-            for f in d.get("findings_after_filtering") or []:
-                findings.append({
-                    "rule": f.get("rule_id") or f.get("rule") or f.get("analyzer_id") or "?",
-                    "severity": f.get("severity") or "?",
-                    "title": (f.get("title") or f.get("message") or f.get("description") or "")[:120],
-                })
+            for f in src:
+                if isinstance(f, dict) and "id" in f:      # current shape: issues[]
+                    findings.append({
+                        "rule": f"{f.get('id')}/{f.get('category') or f.get('pattern')}",
+                        "severity": f.get("severity") or "?",
+                        "title": (f.get("explanation") or f.get("finding") or "")[:120],
+                    })
+                else:
+                    findings.append({
+                        "rule": f.get("rule_id") or f.get("rule") or f.get("analyzer_id") or "?",
+                        "severity": f.get("severity") or "?",
+                        "title": (f.get("title") or f.get("message") or f.get("description") or "")[:120],
+                    })
             return {
                 "score": ra.get("score"),
                 "severity": ra.get("severity"),
