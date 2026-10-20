@@ -43,6 +43,20 @@ Art direction, polish, data desain, prinsip estetika, dan copy editing — satu 
 
 Anti-overlap guard: dua modul kreatif(`design-taste-frontend` & `impeccable`) tidak pernah jadi owner artefak yang sama dalam satu sesi; modul lain bekerja sebagai input read-only. Trigger-nya sengaja pas kata real-user ("perbaiki layout", "UI-nya jelek", "feels AI-made"), bukan cuma kata "design".
 
+## Pakai link referensi style
+
+Kasih URL di prompt — skill mengukurnya, bukan menebak dari ingatan:
+
+> *"Bikin landing page kopi, style-nya mirip termul.dev"*
+
+Yang terjadi di dalam:
+1. **Ukur referensi** — `inspect.mjs <url>` buka halaman referensi via browser asli (1440/768/390), simpan screenshot 3 viewport, dan auto baca token: warna nyata, font yang ter-loaded, type sizes, spasi, radius, shadow, gradient → `.taste-skill/reference/`;
+2. **Token jadi `REFERENCE.md`** (project root) sebagai *pinned brief*: grammar style (hierarki, tone, rhythm) — bukan pixel-clone konten/aset milik orang;
+3. **Routing biasa lanjut**: build dari nol → taste run dengan brief pinned (kalau referensi sudah memfiksasi brand color/type: `draw.mjs --keep palette,type`); polish UI existing → impeccable dengan `DESIGN.md` seeded dari `REFERENCE.md`.
+
+Screenshot tanpa Chrome/Node juga bisa: berikan screenshot referensi di prompt, agent baca computed styles-nya manual. Situs dari library riset 247 situs juga bisa dijadikan arah: `node <skill>/scripts/draw.mjs --site <id>`.
+
+
 ## Instalasi
 
 ```bash
