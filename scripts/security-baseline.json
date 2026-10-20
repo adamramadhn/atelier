@@ -1,0 +1,173 @@
+{
+  "design-taste-frontend": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "findings": [],
+    "coverage": 71.1,
+    "waived": [
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/charts.js"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "library/photos.json"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "references/motion.md"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/assets.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/draw.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/inspect.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/lib/app-draw.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/lib/probe.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/lib/rules.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/lint.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/scenes.mjs"
+      }
+    ]
+  },
+  "frontend-design": {
+    "score": 13,
+    "severity": "LOW",
+    "recommendation": "SAFE",
+    "findings": [],
+    "coverage": 100.0,
+    "waived": []
+  },
+  "impeccable": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "findings": [],
+    "coverage": 94.7,
+    "waived": [
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/data/font-index.json"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "scripts/live-browser.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/live-browser.js"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "scripts/modern-screenshot.umd.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/modern-screenshot.umd.js"
+      }
+    ]
+  },
+  "no-ai-slop": {
+    "score": 0,
+    "severity": "LOW",
+    "recommendation": "SAFE",
+    "findings": [],
+    "coverage": 100.0,
+    "waived": []
+  },
+  "ui-ux-pro-max": {
+    "score": 100,
+    "severity": "CRITICAL",
+    "recommendation": "DO_NOT_INSTALL",
+    "findings": [],
+    "coverage": 93.2,
+    "waived": [
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/google-font-licenses.json"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "data/products.csv"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "data/stacks/avalonia.csv"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "data/stacks/uno.csv"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "scripts/tests/fixtures/relevance-baseline.json"
+      }
+    ]
+  }
+}
