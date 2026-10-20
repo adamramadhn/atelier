@@ -1,13 +1,13 @@
 # design-skills
 
-Satu skill gabungan bernama **`design-suite`** yang menggabungkan 5 sumber upstream menjadi 1 kesatuan: satu `SKILL.md` entry point dengan routing internal, dan 5 modul vendored byte-per-byte di bawahnya sebagai `references/`.
+Satu skill gabungan bernama **`atelier`** yang menggabungkan 5 sumber upstream menjadi 1 kesatuan: satu `SKILL.md` entry point dengan routing internal, dan 5 modul vendored byte-per-byte di bawahnya sebagai `references/`.
 
 Repo ini private, untuk konsumsi pribadi (attribution lisensi di tabel di bawah).
 
 ## Struktur
 
 ```
-skills/design-suite/
+skills/atelier/
   SKILL.md                 ← entry point: routing 5 modul + guard anti-overlap + environment
   references/
     ui-ux-pro-max/         ← upstream body utuh (data CSV, scripts, SKILL.md)
@@ -20,7 +20,7 @@ AGENTS.md                  ← pintu repo untuk agent generik → menunjuk SKILL
 CLAUDE.md                  ← pintu repo untuk Claude Code → menunjuk SKILL.md
 ```
 
-Skill yang terpasang adalah `design-suite` saja — modulnya bukan skill terpisah, tapi dimuat on-demand dari `references/<modul>/SKILL.md` sesuai routing entry point.
+Skill yang terpasang adalah `atelier` saja — modulnya bukan skill terpisah, tapi dimuat on-demand dari `references/<modul>/SKILL.md` sesuai routing entry point.
 
 ## Provenance
 
@@ -39,17 +39,17 @@ Yang sengaja TIDAK diambil:
 
 ## Instalasi
 
-Salin seluruh `skills/design-suite/` ke direktori skills harness (`~/.claude/skills/design-suite/`, `.agents/skills/design-suite/`, dll) — folder `references/` harus ikut karena modul dimuat dari sana. Untuk repositori konsumen yang ingin routing/panduan project-level, copy bagian ini:
+Salin seluruh `skills/atelier/` ke direktori skills harness (`~/.claude/skills/atelier/`, `.agents/skills/atelier/`, dll) — folder `references/` harus ikut karena modul dimuat dari sana. Untuk repositori konsumen yang ingin routing/panduan project-level, copy bagian ini:
 
 ```
 AGENTS.md             → <project>/AGENTS.md
 CLAUDE.md             → <project>/CLAUDE.md
-skills/design-suite/  → <project>/.claude/skills/design-suite/
+skills/atelier/  → <project>/.claude/skills/atelier/
 ```
 
 ## Pemakaian
 
-Pintu utama routing ada di `skills/design-suite/SKILL.md`:
+Pintu utama routing ada di `skills/atelier/SKILL.md`:
 1. Visual vs teks — teks → `no-ai-slop`;
 2. Greenfield page vs refine incumbent UI — baru → `design-taste-frontend`, existing → `impeccable`;
 3. `ui-ux-pro-max` selalu sebagai lookup data di dalam pipeline manapun;

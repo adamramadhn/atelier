@@ -1,11 +1,11 @@
 ---
-name: design-suite
+name: atelier
 description: "One entry point for all UI and copy work. Five internally-vendored modules, routed by task: (1) ui-ux-pro-max — searchable design conventions (79 styles, 192 palettes, 74 font pairings, 119 UX guidelines, 22 stacks); (2) design-taste-frontend (taste-skill v2) — greenfield art direction and building landing pages, marketing sites, portfolios, one-pagers and app screens, anti-slop house style with real-browser inspection and screenshot loops; (3) impeccable — refine, critique, audit, polish, harden, or otherwise improve an EXISTING UI, including native (iOS/Android) surfaces. (4) frontend-design — inexpensive principles for distinctive, intentional design on any fresh UI. (5) no-ai-slop — edit or detect AI-slop patterns in any copy or documentation. Trigger on ANY UI/front-end work — pages, components, dashboards, forms, settings, modals, styling, layout, responsive, dark mode, typography, charts, Tailwind/shadcn/CSS — even when the user never says 'design': building, editing, fixing, or reviewing a visual surface is the trigger. Also for copy editing and the accusation that something looks generic / AI-made."
 user-invocable: true
 argument-hint: "[lookup|taste|impeccable|principles|slop] <module-args> [target]"
 ---
 
-# design-suite
+# atelier
 
 One skill, five vendored modules loaded on demand. This SKILL.md decides **which** module runs; the module's own SKILL.md under `references/` then governs how. Module bodies are unedited upstream vendor copies — always execute/trust them as-is; never paraphrase them into this file or vice versa.
 
