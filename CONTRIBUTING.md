@@ -44,6 +44,7 @@ behind one routing entry point. Contributions that respect the packaging model a
 
 ## PR checklist
 
+- [ ] `python3 scripts/smoke-test.py` passes (frontmatter parse, `node --check`, python syntax, banned-pattern scan)
 - [ ] No changes inside `skills/atelier/references/**` (or a provenance-row update accompanies one)
 - [ ] `SKILL.md` frontmatter still parses (4 keys: `name`, `description`, `user-invocable`, `argument-hint`)
 - [ ] The routing table in README.md and the module table in SKILL.md remain in sync
