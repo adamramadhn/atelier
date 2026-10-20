@@ -46,8 +46,8 @@ Anti-overlap guard: dua modul kreatif(`design-taste-frontend` & `impeccable`) ti
 ## Instalasi
 
 ```bash
-git clone git@github.com:adamramadhn/design-skills.git
-cp -r design-skills/skills/atelier ~/.claude/skills/atelier   # atau .agents/skills/, dst
+git clone git@github.com:adamramadhn/atelier.git
+cp -r atelier/skills/atelier ~/.claude/skills/atelier   # atau .agents/skills/, dst
 ```
 
 Folder `references/` harus ikut — modul dimuat on-demand dari sana. Slash-invocable: `/atelier`; tanpa slash pun model memanggil otomatis saat ada pekerjaan UI. Untuk project konsumen yang mau routing dipaksakan level-project, tambahkan baris ini ke `AGENTS.md`/`CLAUDE.md`:
