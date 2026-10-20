@@ -8,3 +8,4 @@ Agent-facing instructions for this repository: a single combined skill, **`skill
 - **Do not promote a module back into a standalone skill.** The one-skill model is intentional; the entry point's anti-overlap guard depends on it.
 - **Skill folder is self-contained.** It only needs its own directory tree; copy it whole (`references/` included) to install into any harness's skills directory.
 - **Update policy:** manual-review-only upstream sync — diff each module folder against its upstream commit before merging; never auto-update.
+- **Auto-trigger in consuming projects:** add this line to the consumer project's `AGENTS.md`/`CLAUDE.md` so UI work routes here even in agents without a skill loader: `Any UI/front-end task (pages, components, styling, layouts, UI copy): read .claude/skills/design-suite/SKILL.md and follow its routing before editing.`
