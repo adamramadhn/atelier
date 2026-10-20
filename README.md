@@ -1,60 +1,96 @@
-# design-skills
+<div align="center">
 
-Satu skill gabungan bernama **`atelier`** yang menggabungkan 5 sumber upstream menjadi 1 kesatuan: satu `SKILL.md` entry point dengan routing internal, dan 5 modul vendored byte-per-byte di bawahnya sebagai `references/`.
+# ✦ ATELIER
 
-Repo ini private, untuk konsumsi pribadi (attribution lisensi di tabel di bawah).
+**Satu skill, semua yang dibutuhkan UI.**
+Art direction, polish, data desain, prinsip estetika, dan copy editing — satu pintu, tanpa overlap.
 
-## Struktur
+![Atelier banner](assets/banner.png)
+
+![Format](https://img.shields.io/badge/format-agent--standard--skills-blue)
+![Lisensi modul](https://img.shields.io/badge/lisensi-MIT%20%2F%20Apache--2.0%20%2F%20Anthropic-green)
+![Status](https://img.shields.io/badge/status-private--use-orange)
+
+</div>
+
+---
+
+**Atelier** adalah satu skill gabungan (single SKILL.md entry point) yang menyatukan lima skill UI/UX & writing terbaik dari sumber open-source, di bawah satu routing anti-overlap. Bukan 5 skill terpisah — agent hanya mengenali **satu** nama: `atelier`. Body tiap modul tetap byte-per-byte dari upstream (mudah di-diff saat update), tapi tidak pernah dibenarkan jadi skill mandiri.
+
+## Isi (5 modul, 1 routing)
+
+| # | Modul | Untuk apa | Kredit |
+|---|-------|-----------|--------|
+| 1 | `ui-ux-pro-max` | Lookup konvensi desain: 79 styles, 192 palettes, 74 font pairing, 119 UX guidelines, 22 stacks | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT) |
+| 2 | `design-taste-frontend` | Art direction dari nol & build landing/marketing/portfolio: deal arah visual dari studi 247 situs gallery, house style anti-slop, validasi browser asli + screenshot loop | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT) |
+| 3 | `impeccable` | Refine/audit/polish UI **existing**: 24 command (critique, audit, polish, harden, animate, live, …) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache-2.0) |
+| 4 | `frontend-design` | Lensa prinsip estetika universal — tipografi, motion restraint, copy UI — prosa murah tanpa runtime | [anthropics/skills · frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) (Anthropic) |
+| 5 | `no-ai-slop` | Editor teks: hapus/deteksi pola AI-slop di copy, README, docs — tanpa merusak voice | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) (MIT) |
+
+## Cara kerjanya
 
 ```
-skills/atelier/
-  SKILL.md                 ← entry point: routing 5 modul + guard anti-overlap + environment
-  references/
-    ui-ux-pro-max/         ← upstream body utuh (data CSV, scripts, SKILL.md)
-    design-taste-frontend/ ← upstream body utuh (library, scripts, assets, SKILL.md)
-    impeccable/            ← upstream body utuh (reference/, scripts/, SKILL.md)
-    frontend-design/       ← upstream body utuh + LICENSE.txt Anthropic
-    no-ai-slop/            ← upstream body utuh (SKILL, eval)
-README.md                  ← dokumen ini (sumber provenance)
-AGENTS.md                  ← pintu repo untuk agent generik → menunjuk SKILL.md
-CLAUDE.md                  ← pintu repo untuk Claude Code → menunjuk SKILL.md
+              permintaan user (UI / copy)
+                        ↓
+              ┌── SKILL.md (atelier) ──┐
+              │  teks / docs      → no-ai-slop
+              │  UI existing      → impeccable
+              │  UI baru/landing  → design-taste-frontend
+              │  lookup data      → ui-ux-pro-max
+              │  prinsip          → frontend-design
+              └────────────────────────┘
 ```
 
-Skill yang terpasang adalah `atelier` saja — modulnya bukan skill terpisah, tapi dimuat on-demand dari `references/<modul>/SKILL.md` sesuai routing entry point.
-
-## Provenance
-
-| Module di `references/` | Upstream | Commit diambil | Lisensi |
-|---|---|---|---|
-| `design-taste-frontend` | github.com/Leonxlnx/taste-skill (`skills/taste-skill`) | `b9ca2fd` (2026-10-19) | MIT |
-| `impeccable` | github.com/pbakaus/impeccable (`.claude/skills/impeccable`) | `0665bd8` (2026-10-19) | Apache-2.0 |
-| `ui-ux-pro-max` | github.com/nextlevelbuilder/ui-ux-pro-max-skill (`.claude/skills/ui-ux-pro-max`) | `56ea9cf` (2026-10-15) | MIT |
-| `frontend-design` | github.com/anthropics/skills (`skills/frontend-design`) | `dbd4588` (2026-10-09) | Lisensi Anthropic (attribution; lihat LICENSE.txt di folder melalui referensi) |
-| `no-ai-slop` | github.com/petergyang/no-ai-slop (`skills/no-ai-slop`) | `000650b` (2026-09-01) | MIT |
-
-Yang sengaja TIDAK diambil:
-- `taste-skill`: v1, v2-experimental, gpt-taste, stitch (deprecated/varian), style variants opt-in (soft/minimalist/brutalist), dan 4 skill pointer "moved" (brandkit, imagegen-web/mobile, image-to-code → repo `Leonxlnx/imagegen-skills`).
-- `impeccable` & `ui-ux-pro-max-skill`: full repo tidak diambil, hanya folder skill (engine impeccable tetap di dalam folder modulnya).
-- sisanya `anthropics/skills` (canvas-design, web-artifacts-builder, document-skills, dll) di luar scope.
+Anti-overlap guard: dua modul kreatif(`design-taste-frontend` & `impeccable`) tidak pernah jadi owner artefak yang sama dalam satu sesi; modul lain bekerja sebagai input read-only. Trigger-nya sengaja pas kata real-user ("perbaiki layout", "UI-nya jelek", "feels AI-made"), bukan cuma kata "design".
 
 ## Instalasi
 
-Salin seluruh `skills/atelier/` ke direktori skills harness (`~/.claude/skills/atelier/`, `.agents/skills/atelier/`, dll) — folder `references/` harus ikut karena modul dimuat dari sana. Untuk repositori konsumen yang ingin routing/panduan project-level, copy bagian ini:
-
-```
-AGENTS.md             → <project>/AGENTS.md
-CLAUDE.md             → <project>/CLAUDE.md
-skills/atelier/  → <project>/.claude/skills/atelier/
+```bash
+git clone git@github.com:adamramadhn/design-skills.git
+cp -r design-skills/skills/atelier ~/.claude/skills/atelier   # atau .agents/skills/, dst
 ```
 
-## Pemakaian
+Folder `references/` harus ikut — modul dimuat on-demand dari sana. Slash-invocable: `/atelier`; tanpa slash pun model memanggil otomatis saat ada pekerjaan UI. Untuk project konsumen yang mau routing dipaksakan level-project, tambahkan baris ini ke `AGENTS.md`/`CLAUDE.md`:
 
-Pintu utama routing ada di `skills/atelier/SKILL.md`:
-1. Visual vs teks — teks → `no-ai-slop`;
-2. Greenfield page vs refine incumbent UI — baru → `design-taste-frontend`, existing → `impeccable`;
-3. `ui-ux-pro-max` selalu sebagai lookup data di dalam pipeline manapun;
-4. `frontend-design` sebagai lensa prinsip murah kapan saja.
+```
+Any UI/front-end task (pages, components, styling, layouts, UI copy): read
+.claude/skills/atelier/SKILL.md and follow its routing before editing.
+```
 
-Guard anti-overlap: 2 modul kreatif tidak boleh jadi owner artefak yang sama dalam satu sesi; yang lain boleh sebagai input read-only.
+## Uji cepat
 
-Kebijakan update: manual-review-only — tidak ada auto-update upstream; saat upgrade, diff folder modul vs commit provenance di atas dan review semua perubahan sebelum dipakai.
+Setelah install, sesi Claude Code baru: *"bikin landing page buat brand kopi"* — skill harus ter-trigger sendiri dan membaca modul `design-taste-frontend` (deal + build + screenshot loop). Tampilan akhir diverifikasi via browser; `.taste-skill/` adalah working files lokal.
+
+## Environment & dependensi
+
+| Modul | Butuh |
+|---|---|
+| `design-taste-frontend` | Node 22+, Chrome/Edge/Chromium; `assets.mjs` butuh jaringan (tanpa API key) |
+| `impeccable` | Self-contained binary auto-download ke `~/.impeccable/bin/` |
+| `ui-ux-pro-max` | Offline penuh (data CSV bundled) |
+| `frontend-design`, `no-ai-slop` | Tanpa runtime |
+
+## Provenance & update
+
+Update upstream **manual-review-only**: diff folder modul vs commit provenance, review semua perubahan, baru merge.
+
+| Modul | Commit upstream dipilih | Lisensi |
+|---|---|---|
+| `design-taste-frontend` | `b9ca2fd` (2026-10-19) | MIT |
+| `impeccable` | `0665bd8` (2026-10-19) | Apache-2.0 |
+| `ui-ux-pro-max` | `56ea9cf` (2026-10-15) | MIT |
+| `frontend-design` | `dbd4588` (2026-10-09) | Anthropic |
+| `no-ai-slop` | `000650b` (2026-09-01) | MIT |
+
+Yang sengaja TIDAK diambil:
+- varian deprecated/pointer "moved" di `taste-skill` (v1, v2-experimental, gpt-taste, stitch, soft/minimalist/brutalist, brandkit, imagegen, image-to-code);
+- full repo `impeccable` & `ui-ux-pro-max-skill` (hanya folder skill-nya);
+- sisanya `anthropics/skills` (canvas-design, web-artifacts-builder, document-skills, dll).
+
+---
+
+<div align="center">
+
+**Kurasi pribadi.** Repo privat — tidak untuk disebarkan setelah refactor kecil.
+
+</div>

@@ -1,5 +1,6 @@
-__pycache__/
-*.pyc
-.taste-skill/
-node_modules/
+banner.html
 .DS_Store
+node_modules/
+*.pyc
+__pycache__/
+.taste-skill/
