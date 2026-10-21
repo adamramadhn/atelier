@@ -51,3 +51,7 @@ When the user seeds the task with a URL (or screenshots) whose look they want im
 ## Update policy
 
 Upstream sync is manual-review-only. Provenance (upstream repo + commit picked per module) is in the repo's `README.md`; when upgrading, diff the vendored module folder against the upstream commit and review every change before merging. Never update these folders automatically.
+
+## Update notice (installed copy)
+
+At most once per session, before heavy work begins: run `sh scripts/check-update.sh` from this skill's root (one 4s network call, always exit 0, prints `no-info` silently when offline). If it prints `UPDATE AVAILABLE`, pause and tell the user: "Skill atelier installed `<installed>`, latest `<latest>` — update now?" If they confirm, run `sh <(curl -s https://raw.githubusercontent.com/adamramadhn/atelier/main/install.sh)`, then re-read `SKILL.md` and any module files before continuing. Ignore `update-notified` (repeated within 24h) and skip the check entirely when the user wants a short/fast operation.

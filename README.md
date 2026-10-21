@@ -98,6 +98,10 @@ one-liner (idempotent — re-running replaces `~/.claude/skills/atelier` in plac
 sh <(curl -s https://raw.githubusercontent.com/adamramadhn/atelier/main/install.sh)
 ```
 
+The installed skill also self-checks: at most once per session (24h throttle), when
+`atelier` is triggered the agent runs `scripts/check-update.sh` (one 4s request) and, if a
+newer `VERSION` exists on main, asks you update/yes-no before continuing.
+
 The `references/` folder must travel with it — modules load on-demand from there. Slash-invocable
 as `/atelier` (Claude Code & agent-standard harnesses); without a slash it auto-triggers on UI work.
 To enforce routing at project level in consumer repos, add to `AGENTS.md`/`CLAUDE.md`:
