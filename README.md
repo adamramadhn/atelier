@@ -79,8 +79,23 @@ styles by hand. Sites from the built-in 247-site study also work as a direction:
 ## Installation
 
 ```bash
+sh <(curl -s https://raw.githubusercontent.com/adamramadhn/atelier/main/install.sh)
+```
+
+or manually:
+
+```bash
 git clone https://github.com/adamramadhn/atelier.git
 cp -r atelier/skills/atelier ~/.claude/skills/atelier   # or .agents/skills/, etc.
+```
+
+## Updating
+
+Vendored modules move upstream on their own cadence; pull the latest with the same
+one-liner (idempotent — re-running replaces `~/.claude/skills/atelier` in place):
+
+```bash
+sh <(curl -s https://raw.githubusercontent.com/adamramadhn/atelier/main/install.sh)
 ```
 
 The `references/` folder must travel with it — modules load on-demand from there. Slash-invocable
