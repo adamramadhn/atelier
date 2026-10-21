@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for considering a contribution! `atelier` unifies five open-source design skills
+Thanks for considering a contribution! `atelier` unifies six open-source design skills
 behind one routing entry point. Contributions that respect the packaging model are welcome.
 
 ## How this repo is structured
