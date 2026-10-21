@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Agent-facing instructions for this repository: a single combined skill, **`skills/atelier`**, that unifies five vendored upstream modules under one entry point.
+Agent-facing instructions for this repository: a single combined skill, **`skills/atelier`**, that unifies six vendored upstream modules under one entry point.
 
 **The routing source of truth is `skills/atelier/SKILL.md`.** Read it first for any design/UI/copy request — it decides which module (under `references/<module>/SKILL.md`) governs the task. This file only covers repository-level hygiene.
 

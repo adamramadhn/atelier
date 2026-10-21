@@ -18,20 +18,21 @@ Art direction, polish, design data, aesthetic principles, and copy editing — o
 Let a coding agent build a landing page and it tends to produce the *average* of every page it has
 seen: centered headline, three cards with icons, a soft gradient, thin rules. Different open-source
 skills attack different slices of that problem — **`atelier` unifies the best of them behind one
-routing entry point**, so you install, remember, and invoke a *single* skill instead of five.
+routing entry point**, so you install, remember, and invoke a *single* skill instead of many.
 
-The five vendored bodies stay byte-for-byte faithful to their upstream commits (easy to diff and
+The six vendored bodies stay byte-for-byte faithful to their upstream commits (easy to diff and
 update), packaged under one root skill with routing that keeps them out of each other's way.
 
-## Modules (5, one routing)
+## Modules (6, one routing)
 
 | # | Module | Use it for | Credit / license |
 |---|--------|-----------|------------------|
 | 1 | `ui-ux-pro-max` | Searchable design conventions: 79 styles, 192 palettes, 74 font pairings, 119 UX guidelines, 22 stacks (fully offline CSV data) | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · MIT |
 | 2 | `design-taste-frontend` | Greenfield art direction & building landing/marketing/portfolio pages: directions dealt from a study of 247 gallery sites, strict anti-slop house style, real-browser inspection + screenshot loop | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) · MIT |
 | 3 | `impeccable` | Refine / critique / audit / polish **existing** UI: 24 commands (critique, audit, polish, harden, animate, live, …) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) · Apache-2.0 |
-| 4 | `frontend-design` | Universal aesthetic principles for any fresh UI — typography, motion restraint, UI copywriting; cheap prose, no runtime | [anthropics/skills · frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) · Apache-2.0 |
-| 5 | `no-ai-slop` | Copy & documentation editing: remove or detect AI-slop patterns while preserving the writer's voice | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) · MIT |
+| 4 | `motion-design` | Motion-first UI: timing, easing, choreography, micro-interactions, transitions, loading states, scroll motion, Lottie/GSAP/Framer/CSS springs, brand motion personality | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) · MIT |
+| 5 | `frontend-design` | Universal aesthetic principles for any fresh UI — typography, motion restraint, UI copywriting; cheap prose, no runtime | [anthropics/skills · frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) · Apache-2.0 |
+| 6 | `no-ai-slop` | Copy & documentation editing: remove or detect AI-slop patterns while preserving the writer's voice | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) · MIT |
 
 Full provenance (upstream repo + vendored commit per module): [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
@@ -42,6 +43,7 @@ Full provenance (upstream repo + vendored commit per module): [THIRD-PARTY-NOTIC
                         ↓
               ┌── SKILL.md (atelier) ──┐
               │  text / docs      → no-ai-slop
+              │  motion-first     → motion-design
               │  existing UI      → impeccable
               │  new page/landing → design-taste-frontend
               │  data lookup      → ui-ux-pro-max
@@ -118,7 +120,7 @@ Any UI/front-end task (pages, components, styling, layouts, UI copy): read
 | `design-taste-frontend` | Node 22+, Chrome/Edge/Chromium; `assets.mjs` needs network (no API key) |
 | `impeccable` | Self-contained binary, auto-downloaded to `~/.impeccable/bin/` on first run |
 | `ui-ux-pro-max` | Fully offline (bundled CSV data) |
-| `frontend-design`, `no-ai-slop` | No runtime |
+| `frontend-design`, `no-ai-slop`, `motion-design` | No runtime |
 
 ## Quick test
 
