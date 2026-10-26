@@ -440,8 +440,12 @@
         "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
       }
     ],
-    "coverage": 71.1,
+    "coverage": 71.8,
     "waived": [
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
+      },
       {
         "reason_code": "reference_unresolved",
         "path": "SKILL.md"
@@ -648,11 +652,6 @@
         "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
       },
       {
-        "rule": "RA2/Rogue Agent",
-        "severity": "MEDIUM",
-        "title": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persi"
-      },
-      {
         "rule": "AS3/Agent Snooping",
         "severity": "MEDIUM",
         "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
@@ -778,6 +777,30 @@
       {
         "reason_code": "static_parse_limit",
         "path": "scripts/modern-screenshot.umd.js"
+      }
+    ]
+  },
+  "motion-design": {
+    "score": 30,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "findings": [
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      },
+      {
+        "rule": "MP3/Memory Poisoning",
+        "severity": "HIGH",
+        "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
+      }
+    ],
+    "coverage": 100.0,
+    "waived": [
+      {
+        "reason_code": "reference_unresolved",
+        "path": "SKILL.md"
       }
     ]
   },
