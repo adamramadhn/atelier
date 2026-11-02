@@ -577,6 +577,11 @@
         "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
       },
       {
+        "rule": "TM1/Tool Misuse",
+        "severity": "HIGH",
+        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+      },
+      {
         "rule": "LP3/MCP Least Privilege",
         "severity": "MEDIUM",
         "title": "Without declared permissions the skill's intent is opaque and cannot be validated."
@@ -630,6 +635,11 @@
         "rule": "EA2/Excessive Agency",
         "severity": "MEDIUM",
         "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "RP1/MCP Rug Pull",
+        "severity": "MEDIUM",
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
       },
       {
         "rule": "RP1/MCP Rug Pull",
@@ -742,6 +752,16 @@
         "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
       },
       {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
+        "rule": "SSRF2/Server-Side Request Forgery",
+        "severity": "MEDIUM",
+        "title": "Code issues a request to a loopback, link-local, or private-range host. This can reach internal services not meant to be"
+      },
+      {
         "rule": "E1/Data Exfiltration",
         "severity": "MEDIUM",
         "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
@@ -752,7 +772,7 @@
         "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
       }
     ],
-    "coverage": 94.7,
+    "coverage": 93.1,
     "waived": [
       {
         "reason_code": "reference_unresolved",
@@ -761,6 +781,10 @@
       {
         "reason_code": "static_parse_limit",
         "path": "scripts/data/font-index.json"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/impeccable"
       },
       {
         "reason_code": "obfuscated_instruction_text",
