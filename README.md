@@ -27,7 +27,7 @@ update), packaged under one root skill with routing that keeps them out of each 
 
 | # | Module | Use it for | Credit / license |
 |---|--------|-----------|------------------|
-| 1 | `ui-ux-pro-max` | Searchable design conventions: 79 styles, 192 palettes, 74 font pairings, 119 UX guidelines, 22 stacks (fully offline CSV data) | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · MIT |
+| 1 | `ui-ux-pro-max` | Searchable design conventions: 80 styles, 192 palettes, 74 font pairings, 120 UX guidelines, 22 stacks (fully offline CSV data) | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · MIT |
 | 2 | `design-taste-frontend` | Greenfield art direction & building landing/marketing/portfolio pages: directions dealt from a study of 247 gallery sites, strict anti-slop house style, real-browser inspection + screenshot loop | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) · MIT |
 | 3 | `impeccable` | Refine / critique / audit / polish **existing** UI: 24 commands (critique, audit, polish, harden, animate, live, …) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) · Apache-2.0 |
 | 4 | `motion-design` | Motion-first UI: timing, easing, choreography, micro-interactions, transitions, loading states, scroll motion, Lottie/GSAP/Framer/CSS springs, brand motion personality | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) · MIT |
