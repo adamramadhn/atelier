@@ -7,7 +7,7 @@ every vendored folder to its source.
 | Module (`skills/atelier/references/…`) | Upstream | Vendored at | License |
 |---|---|---|---|
 | `design-taste-frontend` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (`skills/taste-skill`) | commit `12af471`, 2026-10-26 | MIT |
-| `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (`.claude/skills/impeccable`) | commit `e89e3ad`, 2026-11-02 | Apache-2.0 |
+| `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (`.claude/skills/impeccable`) | commit `29f95ac`, 2026-11-09 | Apache-2.0 |
 | `ui-ux-pro-max` | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (`.claude/skills/ui-ux-pro-max`) | commit `3a13158`, 2026-11-02 | MIT |
 | `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills) (`skills/frontend-design`) | commit `ca45fc4`, 2026-11-02 | Apache-2.0 (verbatim `LICENSE.txt` inside the folder) |
 | `no-ai-slop` | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) (`skills/no-ai-slop`) | commit `000650b`, 2026-09-01 | MIT |
