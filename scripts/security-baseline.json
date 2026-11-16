@@ -115,34 +115,14 @@
         "title": "Referenced artifact was not completely inspected"
       },
       {
-        "rule": "TM1/Tool Misuse",
+        "rule": "AE1/analysis-evasion",
         "severity": "HIGH",
-        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+        "title": "Referenced artifact was not completely inspected"
       },
       {
-        "rule": "PE3/Privilege Escalation",
+        "rule": "AE1/analysis-evasion",
         "severity": "HIGH",
-        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
-      },
-      {
-        "rule": "PE3/Privilege Escalation",
-        "severity": "HIGH",
-        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
-      },
-      {
-        "rule": "PE3/Privilege Escalation",
-        "severity": "HIGH",
-        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
-      },
-      {
-        "rule": "PE3/Privilege Escalation",
-        "severity": "HIGH",
-        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
-      },
-      {
-        "rule": "PE3/Privilege Escalation",
-        "severity": "HIGH",
-        "title": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts."
+        "title": "Referenced artifact was not completely inspected"
       },
       {
         "rule": "P2/Prompt Injection",
@@ -155,19 +135,99 @@
         "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
       },
       {
-        "rule": "TM1/Tool Misuse",
+        "rule": "P2/Prompt Injection",
         "severity": "HIGH",
-        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
       },
       {
-        "rule": "TM1/Tool Misuse",
+        "rule": "P2/Prompt Injection",
         "severity": "HIGH",
-        "title": "Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks "
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
       },
       {
-        "rule": "AS3/Agent Snooping",
-        "severity": "MEDIUM",
-        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
+      },
+      {
+        "rule": "YR4/YARA Match",
+        "severity": "HIGH",
+        "title": "YARA rule matched a hack tool or exploit indicator (offensive tools, reconnaissance, privilege escalation, or exploit fr"
+      },
+      {
+        "rule": "P6/System Prompt Leakage",
+        "severity": "HIGH",
+        "title": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users o"
+      },
+      {
+        "rule": "P2/Prompt Injection",
+        "severity": "HIGH",
+        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
       },
       {
         "rule": "LP3/MCP Least Privilege",
@@ -175,272 +235,17 @@
         "title": "Without declared permissions the skill's intent is opaque and cannot be validated."
       },
       {
-        "rule": "EA4/Excessive Agency",
+        "rule": "P9/Prompt Injection",
         "severity": "MEDIUM",
-        "title": "Skill allows unbounded resource consumption (API calls, storage, compute). Without rate limits or quotas, a compromised "
+        "title": "Large whitespace padding was detected (a block of blank lines or a long run of spaces). This can push injected instructi"
       },
       {
-        "rule": "E1/Data Exfiltration",
+        "rule": "RP1/MCP Rug Pull",
         "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
-      },
-      {
-        "rule": "E1/Data Exfiltration",
-        "severity": "MEDIUM",
-        "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
       }
     ],
-    "coverage": 71.8,
+    "coverage": 93.2,
     "waived": [
       {
         "reason_code": "reference_unresolved",
@@ -463,52 +268,420 @@
         "path": "SKILL.md"
       },
       {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
+        "reason_code": "static_parse_limit",
+        "path": "assets/backgrounds/check.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "assets/charts.js"
+        "path": "assets/backgrounds/pick.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/_lab.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/fx-dither-object/component.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/fx-feature-card/component.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/fx-map/bake.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/fx-map/component.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/fx-spotlight/component.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/index.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/components/shared.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/diagrams/demo.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/diagrams/diagram.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/ascii-shade/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/aurora-curtains/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/bayer-dither/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/caustics/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/contour-lines/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/dotted-globe/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/duotone-grade/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/edge-glow/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/film-light-leak/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/fluted-glass/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/fx.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/gallery.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/god-rays/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/gradient-mesh/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/grain-gradient/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/grid-pulse/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/halftone-screen/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/lab.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/line-engraving/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/orb-sphere/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/painterly-landscape/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/pick.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/prism-dispersion/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/ridgeline/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/ruled-grounds/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/silk-folds/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/soft-light-bars/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/effects/spotlight-cone/effect.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/layout/check.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/layout/deal.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/layout/layout-check.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/moments/counter-rolls/moment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/moments/moments.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/motion/motion.css"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/motion/motion.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_print-core/auto.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_print-core/lint-glsl.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_print-core/make-fallbacks.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_print-core/print3d.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_scenes/auto.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/_scenes/kit.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/dither-sequence/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/dot-object/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/exploded-layers/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/index.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/photo-kit/photo.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/print-globe/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/product-render/build.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/product-render/make-posters.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/product-render/make-posters.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/product-turntable/make-fallbacks.html"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/product-turntable/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/objects/split-reveal/object.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/_demo/shoot.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/descend-through-weather/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/dot-becomes-the-full-stop/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/fixed-hero-object/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/fly-into-the-shape/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/letter-bar-floods-the-ground/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/letter-physics/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/lib.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/object-through-giant-type/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/parts-lock-into-the-whole/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/powers-of-ten-pullback/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/print.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/product-assembles-into-its-action/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/scenes.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/scenes/shaped-window-over-fixed-world/scene.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/system.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/cursor/fragment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/notify/fragment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/pipeline-board/fragment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/terminal-run/fragment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/ui.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "assets/ui/voice/fragment.js"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "references/gate.md"
       },
       {
         "reason_code": "obfuscated_instruction_text",
-        "path": "library/photos.json"
+        "path": "references/sections.md"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "references/motion.md"
+        "path": "references/sections.md"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "scripts/consistency.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/assets.mjs"
+        "path": "scripts/consistency.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/draw.mjs"
+        "path": "scripts/copy-lint.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/inspect.mjs"
+        "path": "scripts/effects.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/lib/app-draw.mjs"
+        "path": "scripts/fx-gallery.template.html"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/lib/probe.mjs"
+        "path": "scripts/fx-lab.template.html"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "scripts/gate.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/lib/rules.mjs"
+        "path": "scripts/gate.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/lint.mjs"
+        "path": "scripts/icons.mjs"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/scenes.mjs"
+        "path": "scripts/moments.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/perf.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/photos.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/shoot.mjs"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/start.mjs"
       }
     ]
   },
@@ -532,6 +705,26 @@
     "recommendation": "DO_NOT_INSTALL",
     "findings": [
       {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      },
+      {
         "rule": "MP3/Memory Poisoning",
         "severity": "HIGH",
         "title": "Skill manipulates agent memory, state, or stored context. Memory corruption can alter personality, override safety rules"
@@ -547,6 +740,16 @@
         "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
       },
       {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
+      },
+      {
+        "rule": "AS1/Agent Snooping",
+        "severity": "HIGH",
+        "title": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, "
+      },
+      {
         "rule": "AS1/Agent Snooping",
         "severity": "HIGH",
         "title": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, "
@@ -555,16 +758,6 @@
         "rule": "AS1/Agent Snooping",
         "severity": "HIGH",
         "title": "Skill reads from agent configuration directories (.claude/, .codex/, .gemini/). These directories may contain API keys, "
-      },
-      {
-        "rule": "P2/Prompt Injection",
-        "severity": "HIGH",
-        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
-      },
-      {
-        "rule": "P2/Prompt Injection",
-        "severity": "HIGH",
-        "title": "Hidden instructions were detected in comments or invisible text. These could contain malicious directives. Manual review"
       },
       {
         "rule": "MP3/Memory Poisoning",
@@ -637,6 +830,26 @@
         "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
       },
       {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
+        "rule": "EA2/Excessive Agency",
+        "severity": "MEDIUM",
+        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
+      },
+      {
         "rule": "RP1/MCP Rug Pull",
         "severity": "MEDIUM",
         "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
@@ -647,29 +860,14 @@
         "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
       },
       {
-        "rule": "EA2/Excessive Agency",
-        "severity": "MEDIUM",
-        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
-      },
-      {
-        "rule": "EA2/Excessive Agency",
-        "severity": "MEDIUM",
-        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
-      },
-      {
-        "rule": "EA2/Excessive Agency",
-        "severity": "MEDIUM",
-        "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
-      },
-      {
         "rule": "AS3/Agent Snooping",
         "severity": "MEDIUM",
         "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
       },
       {
-        "rule": "RA2/Rogue Agent",
+        "rule": "RP1/MCP Rug Pull",
         "severity": "MEDIUM",
-        "title": "Skill establishes unauthorized persistence across sessions via cron jobs, startup scripts, or state files. Session persi"
+        "title": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and pub"
       },
       {
         "rule": "EA2/Excessive Agency",
@@ -680,11 +878,6 @@
         "rule": "EA2/Excessive Agency",
         "severity": "MEDIUM",
         "title": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive "
-      },
-      {
-        "rule": "AS3/Agent Snooping",
-        "severity": "MEDIUM",
-        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
       },
       {
         "rule": "MP1/Memory Poisoning",
@@ -772,23 +965,27 @@
         "title": "Data is being sent to an external URL. This could be legitimate telemetry or data exfiltration. Manual review is recomme"
       }
     ],
-    "coverage": 93.1,
+    "coverage": 88.9,
     "waived": [
       {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
+        "reason_code": "static_parse_limit",
+        "path": "reference/foundations.md"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/data/font-index.json"
+        "path": "reference/harden.md"
       },
       {
         "reason_code": "static_parse_limit",
-        "path": "scripts/impeccable"
+        "path": "reference/live-setup.md"
       },
       {
-        "reason_code": "obfuscated_instruction_text",
-        "path": "scripts/live-browser.js"
+        "reason_code": "static_parse_limit",
+        "path": "reference/live.md"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "scripts/impeccable.cmd"
       },
       {
         "reason_code": "static_parse_limit",
@@ -821,12 +1018,7 @@
       }
     ],
     "coverage": 100.0,
-    "waived": [
-      {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
-      }
-    ]
+    "waived": []
   },
   "no-ai-slop": {
     "score": 0,
@@ -890,16 +1082,6 @@
         "rule": "P1/Prompt Injection",
         "severity": "HIGH",
         "title": "This pattern attempts to override system instructions or ignore safety constraints. Without LLM analysis, manual review "
-      },
-      {
-        "rule": "P6/System Prompt Leakage",
-        "severity": "HIGH",
-        "title": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users o"
-      },
-      {
-        "rule": "P6/System Prompt Leakage",
-        "severity": "HIGH",
-        "title": "Skill contains instructions that could directly expose system prompts, internal rules, or hidden instructions to users o"
       },
       {
         "rule": "E2/Data Exfiltration",
@@ -1152,6 +1334,21 @@
         "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
       },
       {
+        "rule": "AST3/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "Dynamic __import__() can load arbitrary modules at runtime, bypassing static analysis and potentially importing maliciou"
+      },
+      {
+        "rule": "AST3/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "Dynamic __import__() can load arbitrary modules at runtime, bypassing static analysis and potentially importing maliciou"
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
         "rule": "AST4/Dangerous Code Execution",
         "severity": "MEDIUM",
         "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
@@ -1162,9 +1359,34 @@
         "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
       },
       {
-        "rule": "AS3/Agent Snooping",
+        "rule": "AST4/Dangerous Code Execution",
         "severity": "MEDIUM",
-        "title": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals"
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
+      },
+      {
+        "rule": "AST3/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "Dynamic __import__() can load arbitrary modules at runtime, bypassing static analysis and potentially importing maliciou"
+      },
+      {
+        "rule": "AST3/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "Dynamic __import__() can load arbitrary modules at runtime, bypassing static analysis and potentially importing maliciou"
+      },
+      {
+        "rule": "AST4/Dangerous Code Execution",
+        "severity": "MEDIUM",
+        "title": "subprocess module calls execute external commands. Without careful input validation, this enables command injection."
       },
       {
         "rule": "PE1/Privilege Escalation",
@@ -1172,27 +1394,15 @@
         "title": "Skill requests more permissions than appear necessary for its stated functionality. Review if elevated access is justifi"
       }
     ],
-    "coverage": 93.2,
+    "coverage": 84.6,
     "waived": [
       {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
+        "reason_code": "static_parse_limit",
+        "path": "data/charts.csv"
       },
       {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
-      },
-      {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
-      },
-      {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
-      },
-      {
-        "reason_code": "reference_unresolved",
-        "path": "SKILL.md"
+        "reason_code": "static_parse_limit",
+        "path": "data/colors.csv"
       },
       {
         "reason_code": "static_parse_limit",
@@ -1203,16 +1413,36 @@
         "path": "data/products.csv"
       },
       {
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/angular.csv"
+      },
+      {
         "reason_code": "obfuscated_instruction_text",
         "path": "data/stacks/avalonia.csv"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/flutter.csv"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/laravel.csv"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/nuxtjs.csv"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/svelte.csv"
       },
       {
         "reason_code": "obfuscated_instruction_text",
         "path": "data/stacks/uno.csv"
       },
       {
-        "reason_code": "obfuscated_instruction_text",
-        "path": "scripts/tests/fixtures/relevance-baseline.json"
+        "reason_code": "static_parse_limit",
+        "path": "data/stacks/vue.csv"
       }
     ]
   }
