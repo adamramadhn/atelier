@@ -1392,9 +1392,54 @@
         "rule": "PE1/Privilege Escalation",
         "severity": "LOW",
         "title": "Skill requests more permissions than appear necessary for its stated functionality. Review if elevated access is justifi"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AE1/analysis-evasion",
+        "severity": "HIGH",
+        "title": "Referenced artifact was not completely inspected"
+      },
+      {
+        "rule": "AR2/Anti-Refusal",
+        "severity": "HIGH",
+        "title": "Skill instructs the agent to omit warnings, disclaimers, or ethical commentary. Stripping safety caveats hides risk from"
       }
     ],
-    "coverage": 84.6,
+    "coverage": 82.7,
     "waived": [
       {
         "reason_code": "static_parse_limit",
@@ -1443,6 +1488,14 @@
       {
         "reason_code": "static_parse_limit",
         "path": "data/stacks/vue.csv"
+      },
+      {
+        "reason_code": "static_parse_limit",
+        "path": "data/ux-guidelines.csv"
+      },
+      {
+        "reason_code": "obfuscated_instruction_text",
+        "path": "references/quick-reference.md"
       }
     ]
   }
